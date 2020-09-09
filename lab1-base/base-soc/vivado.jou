@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Sep 03 12:46:31 2020
+# Process ID: 5696
+# Current directory: C:/Users/zacharyheil/Desktop/lab1-base/base-soc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent704 C:\Users\zacharyheil\Desktop\lab1-base\base-soc\base-soc.xpr
+# Log file: C:/Users/zacharyheil/Desktop/lab1-base/base-soc/vivado.log
+# Journal file: C:/Users/zacharyheil/Desktop/lab1-base/base-soc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/zacharyheil/Desktop/lab1-base/base-soc/base-soc.xpr
+open_bd_design {C:/Users/zacharyheil/Desktop/lab1-base/base-soc/base-soc.srcs/sources_1/bd/system/system.bd}
+startgroup
+set_property -dict [list CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.RESET_PORT {resetn}] [get_bd_cells clk_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset ( System Reset ) " }  [get_bd_pins clk_wiz_0/resetn]
+save_bd_design
+set_property location {4.5 1429 647} [get_bd_cells axi_gpio_0]
+save_bd_design
