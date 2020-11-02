@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;hello-world_bsp_xtmrctr_intr_example_1/src/xtmrctr_intr_example.c&apos; to &apos;timer_interrupt_example.c&apos;" description="Rename resource &apos;xtmrctr_intr_example.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/xtmrctr_intr_example.c" name="timer_interrupt_example.c" stamp="1604211852390" updateReferences="true"/>
+</session>
